@@ -6,8 +6,6 @@
 }
 
 .container {
-  background-color: #68696a;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,9 +14,6 @@
   color: rgb(255, 255, 255);
 }
 
-div {
-  margin: 0 auto;
-}
 button {
   padding: 0.5rem;
   margin: 0.5rem;
@@ -26,22 +21,24 @@ button {
 }
 
 .wrapper {
-  width: 1200px;
+  width: 60vw;
   margin: 0 auto;
-  border: 1px solid rgb(129, 175, 191);
-  background-color: lightgray;
+  /* border: 1px solid rgb(129, 175, 191); */
+  /* background-color: lightgray; */
 }
 .header {
   border-bottom: 1px solid #eaebeb;
   height: 60px;
   border: 1px solid rgb(128, 83, 0);
-  background-color: violet;
+  /* background-color: violet; */
 }
-
+.montorgeuil {
+  /* background-color: peru; */
+}
 .logo img {
   height: 60px;
   padding: 10px;
-  border: 1px solid teal;
+  /* border: 1px solid teal; */
 }
 .title {
   text-align: center;
@@ -57,25 +54,30 @@ button {
 
 .category-name {
   border: 1px solid rgb(233, 68, 106);
-  background-color: rgb(152, 159, 216);
+  /* background-color: rgb(152, 159, 216); */
 }
 .bgc {
-  background-color: lightslategray;
-  border: 5px dashed rgb(43, 34, 34);
+  width: 100vw;
+  background-color: rgb(238, 235, 235);
+  /* border: 5px dashed rgb(43, 34, 34); */
   width: auto;
+  display: flex;
+}
+.menus {
+  display: flex;
 }
 
 .item-title {
   border: 1px solid rgb(68, 233, 134);
-  background-color: rgb(240, 204, 224);
+  /* background-color: rgb(240, 204, 224); */
 }
 .item-description {
   border: 1px solid rgb(233, 159, 68);
-  background-color: rgb(187, 214, 220);
+  /* background-color: rgb(187, 214, 220); */
 }
 .item-price {
   border: 1px solid rgb(145, 233, 68);
-  background-color: rgb(213, 220, 187);
+  /* background-color: rgb(213, 220, 187); */
 }
 
 .bred {
@@ -84,18 +86,71 @@ button {
 }
 
 .data-name {
+  width: 100%;
+  font-weight: 50;
+  font-size: 25px;
   border: 1px solid rgb(82, 68, 233);
   background-color: rgb(255, 249, 79);
 }
 
 .data-description {
+  font-size: 16px;
+  color: #68696a;
   border: 1px solid rgb(104, 59, 24);
   background-color: rgb(79, 188, 255);
+  padding-right: 20%;
+  text-align: justify;
 }
 .first-image {
   border: 1px solid rgb(233, 68, 68);
   background-color: rgb(132, 79, 255);
 }
-.first-image img {
-  width: 350px;
+
+img {
+  max-width: 50%;
+  object-fit: contain;
+}
+
+/* Media Queries */
+
+@media (min-width: 360px) and (max-width: 450px) {
+  .item-description {
+    border: 1px solid rgb(233, 159, 68);
+    background-color: rgb(187, 214, 220);
+    font-size: 12px;
+  }
+  .item-title {
+    border: 1px solid rgb(68, 233, 134);
+    background-color: rgb(240, 204, 224);
+    font-size: 12px;
+  }
+  .item-price {
+    border: 1px solid rgb(145, 233, 68);
+    background-color: rgb(213, 220, 187);
+    font-size: 12px;
+  }
+  .data-description {
+    font-size: 12px;
+    color: #68696a;
+    border: 1px solid rgb(104, 59, 24);
+    /* background-color: rgb(79, 188, 255); */
+    padding-right: 20%;
+    text-align: justify;
+  }
+  .data-name {
+    width: 100%;
+    font-weight: 50;
+    font-size: 14px;
+    border: 1px solid rgb(82, 68, 233);
+    /* background-color: rgb(255, 249, 79); */
+  }
+  img {
+    width: 50%;
+    object-fit: contain;
+  }
+}
+@media (min-width: 320px) and (max-width: 359px) {
+}
+
+@media (max-width: 319px) {
 }
