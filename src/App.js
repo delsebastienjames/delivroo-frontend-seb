@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
+import Header from "./components/Header";
 
 const App = () => {
   const [data, setData] = useState({});
@@ -27,6 +28,7 @@ const App = () => {
     <span>En cours de chargement... </span>
   ) : (
     <div>
+      <Header />
       <h2>{data.restaurant.name}</h2>
       <h2>{data.restaurant.categories}</h2>
     </div>
