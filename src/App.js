@@ -8,12 +8,16 @@ const App = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get(
-        "https://delivroo-backend-seb.herokuapp.com/"
-      );
-      // console.log(response.data);
-      setData(response.data);
-      setIsLoading(false);
+      try {
+        const response = await axios.get(
+          "https://delivroo-backend-seb.herokuapp.com/"
+        );
+        // console.log(response.data);
+        setData(response.data);
+        setIsLoading(false);
+      } catch (e) {
+        console.log(e);
+      }
     };
 
     fetchData();
