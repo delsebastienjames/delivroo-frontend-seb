@@ -13,9 +13,14 @@ const Menu = ({ data }) => {
               // ce tableau sera parcouru pour afficher le panier
             }}
           >
-            <h4 className="item-title">{item.title}</h4>
-            <p className="item-description">{item.description}</p>
-            <span className="item-price">{item.price}</span>
+            <div className="bgc">
+              <div className="wrapper">
+                <h4 className="item-title">{item.title}</h4>
+                <p className="item-description">{item.description}</p>
+                <span className="item-price">{item.price}</span>
+              </div>
+            </div>
+
             {item.picture && (
               <img
                 style={{ height: 150 }}
