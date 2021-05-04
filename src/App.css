@@ -59,6 +59,12 @@ button {
   border: 1px solid rgb(233, 68, 106);
   background-color: rgb(152, 159, 216);
 }
+.bgc {
+  background-color: lightslategray;
+  border: 5px dashed rgb(43, 34, 34);
+  width: auto;
+}
+
 .item-title {
   border: 1px solid rgb(68, 233, 134);
   background-color: rgb(240, 204, 224);
