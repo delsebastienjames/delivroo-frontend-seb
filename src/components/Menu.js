@@ -15,19 +15,21 @@ const Menu = ({ data }) => {
           >
             <div className="bgc">
               <div className="wrapper">
-                <h4 className="item-title">{item.title}</h4>
-                <p className="item-description">{item.description}</p>
-                <span className="item-price">{item.price}</span>
+                <div className="menus">
+                  <h4 className="item-title">{item.title}</h4>
+                  <p className="item-description">{item.description}</p>
+                  <span className="item-price">{item.price}</span>
+
+                  {item.picture && (
+                    <img
+                      style={{ height: 150 }}
+                      src={item.picture}
+                      alt={item.title}
+                    />
+                  )}
+                </div>
               </div>
             </div>
-
-            {item.picture && (
-              <img
-                style={{ height: 150 }}
-                src={item.picture}
-                alt={item.title}
-              />
-            )}
           </div>
         );
       })}
