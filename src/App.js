@@ -1,7 +1,10 @@
 import { useState, useEffect } from "react";
 import "./App.css";
+import "./index.css";
 import axios from "axios";
 import Header from "./components/Header";
+import Content from "./components/Content";
+import Hero from "./components/Hero";
 
 const App = () => {
   const [data, setData] = useState({});
@@ -29,8 +32,8 @@ const App = () => {
   ) : (
     <div>
       <Header />
-      <h2>{data.restaurant.name}</h2>
-      <h2>{data.restaurant.categories}</h2>
+      <Hero data={data.restaurant} />
+      <Content data={data.categories} />
     </div>
   );
 };
