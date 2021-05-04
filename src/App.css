@@ -14,26 +14,27 @@
   color: rgb(255, 255, 255);
 }
 
-button {
-  padding: 0.5rem;
-  margin: 0.5rem;
-  margin-left: 15px;
-}
-
 .wrapper {
   width: 60vw;
   margin: 0 auto;
   /* border: 1px solid rgb(129, 175, 191); */
-  /* background-color: lightgray; */
+  /* background-color: rgb(227, 47, 47); */
+}
+.wrapper2 {
+  width: 100vw;
+  margin: 0 auto;
+  /* border: 1px solid rgb(129, 175, 191); */
+  /* background-color: rgb(126, 124, 124); */
 }
 .header {
   border-bottom: 1px solid #eaebeb;
   height: 60px;
-  border: 1px solid rgb(128, 83, 0);
+  /* border: 1px solid rgb(128, 83, 0); */
   /* background-color: violet; */
 }
 .montorgeuil {
   /* background-color: peru; */
+  background-color: white;
 }
 .logo img {
   height: 60px;
@@ -58,8 +59,8 @@ button {
 }
 .bgc {
   width: 100vw;
-  background-color: rgb(238, 235, 235);
-  /* border: 5px dashed rgb(43, 34, 34); */
+  /* background-color: rgb(255, 255, 255); */
+  border: 1px dashed rgb(224, 115, 115);
   width: auto;
   display: flex;
 }
@@ -90,14 +91,14 @@ button {
   font-weight: 50;
   font-size: 25px;
   border: 1px solid rgb(82, 68, 233);
-  background-color: rgb(255, 249, 79);
+  /* background-color: rgb(255, 249, 79); */
 }
 
 .data-description {
   font-size: 16px;
   color: #68696a;
   border: 1px solid rgb(104, 59, 24);
-  background-color: rgb(79, 188, 255);
+  /* background-color: rgb(79, 188, 255); */
   padding-right: 20%;
   text-align: justify;
 }
@@ -113,24 +114,24 @@ img {
 
 /* Media Queries */
 
-@media (min-width: 360px) and (max-width: 450px) {
+@media (min-width: 360px) and (max-width: 800px) {
   .item-description {
     border: 1px solid rgb(233, 159, 68);
     background-color: rgb(187, 214, 220);
-    font-size: 12px;
+    font-size: 16px;
   }
   .item-title {
     border: 1px solid rgb(68, 233, 134);
     background-color: rgb(240, 204, 224);
-    font-size: 12px;
+    font-size: 16px;
   }
   .item-price {
     border: 1px solid rgb(145, 233, 68);
     background-color: rgb(213, 220, 187);
-    font-size: 12px;
+    font-size: 16px;
   }
   .data-description {
-    font-size: 12px;
+    font-size: 16px;
     color: #68696a;
     border: 1px solid rgb(104, 59, 24);
     /* background-color: rgb(79, 188, 255); */
@@ -140,7 +141,7 @@ img {
   .data-name {
     width: 100%;
     font-weight: 50;
-    font-size: 14px;
+    font-size: 18px;
     border: 1px solid rgb(82, 68, 233);
     /* background-color: rgb(255, 249, 79); */
   }
