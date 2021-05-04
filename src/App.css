@@ -2,7 +2,7 @@
   text-rendering: geometricPrecision;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lato", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .container {
@@ -16,21 +16,37 @@
   color: rgb(255, 255, 255);
 }
 
+div {
+  margin: 0 auto;
+}
 button {
   padding: 0.5rem;
   margin: 0.5rem;
   margin-left: 15px;
 }
 
-img {
-  width: auto;
-  background-color: paleturquoise;
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  border: 1px solid rgb(129, 175, 191);
+  background-color: lightgray;
+}
+.header {
+  border-bottom: 1px solid #eaebeb;
+  height: 60px;
+  border: 1px solid rgb(128, 83, 0);
+  background-color: violet;
 }
 
+.logo img {
+  height: 60px;
+  padding: 10px;
+  border: 1px solid teal;
+}
 .title {
   text-align: center;
   font-family: "Times New Roman", Times, serif;
-  background-color: rgba(255, 99, 71, 0.249);
+  background-color: rgb(254, 255, 255);
 }
 
 .card-image {
@@ -38,10 +54,34 @@ img {
   /* border: 1px dashed red; */
   color: rgb(76, 19, 167);
 }
-.picture {
-  margin: 0 auto;
-  width: 15vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.category-name {
+  border: 1px solid rgb(233, 68, 106);
+  background-color: rgb(152, 159, 216);
+}
+.item-title {
+  border: 1px solid rgb(68, 233, 134);
+  background-color: rgb(240, 204, 224);
+}
+.item-description {
+  border: 1px solid rgb(233, 159, 68);
+  background-color: rgb(187, 214, 220);
+}
+.item-price {
+  border: 1px solid rgb(145, 233, 68);
+  background-color: rgb(213, 220, 187);
+}
+
+.data-name {
+  border: 1px solid rgb(82, 68, 233);
+  background-color: rgb(255, 249, 79);
+}
+
+.data-description {
+  border: 1px solid rgb(104, 59, 24);
+  background-color: rgb(79, 188, 255);
+}
+.first-img {
+  border: 1px solid rgb(233, 68, 68);
+  background-color: rgb(132, 79, 255);
 }
