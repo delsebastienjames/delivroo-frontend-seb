@@ -1,5 +1,18 @@
+// import d'une image
+import logoDelivroo from "../assets/img/logo.svg";
+
 const Header = () => {
-  return <h1 className="title">Delivroo</h1>;
+  return (
+    <div>
+      <div className="header">
+        <div className="wrapper">
+          <div className="logo">
+            <img src={logoDelivroo} alt="logo delivroo" />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Header;
