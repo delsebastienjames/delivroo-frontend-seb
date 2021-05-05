@@ -22,7 +22,7 @@ const Menu = ({ data }) => {
 
                   {item.picture && (
                     <img
-                      style={{ height: 150 }}
+                      style={{ height: 120 }}
                       src={item.picture}
                       alt={item.title}
                     />
