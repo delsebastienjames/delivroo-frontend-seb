@@ -143,22 +143,23 @@ img {
 
 .price {
   background-color: rgba(61, 176, 238, 0.235);
-  margin-left: 2px;
+  margin-left: 1px;
 }
 .price-total {
-  background-color: rgba(61, 176, 238, 0.235);
+  /* background-color: rgba(61, 176, 238, 0.235); */
   border: 1px solid red;
   display: flex;
   justify-content: right;
 }
 .air {
-  padding: 10px;
+  padding: 8px;
   border-radius: 50%;
   font-size: 12px;
 }
 .air-title {
   padding: 12px;
   font-size: 14px;
+  font-weight: 800;
 }
 /* Media Queries */
 
