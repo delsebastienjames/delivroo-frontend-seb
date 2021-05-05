@@ -1,6 +1,6 @@
 import Menu from "./Menu";
 
-const Content = ({ data }) => {
+const Content = ({ data, addToCart }) => {
   return (
     <div className="background-grey">
       <div className="wrapper">
@@ -10,7 +10,7 @@ const Content = ({ data }) => {
             category.meals.length > 0 && (
               <div key={index}>
                 <h3 className="category-name">{category.name}</h3>
-                <Menu data={category.meals} />
+                <Menu data={category.meals} addToCart={addToCart} />
               </div>
             )
           );
