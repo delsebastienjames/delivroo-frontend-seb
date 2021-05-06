@@ -24,7 +24,7 @@ const Menu = ({ data, addToCart }) => {
                   <span className="item-price">{item.price}</span>
                   {item.picture && (
                     <img
-                      style={{ height: 120 }}
+                      style={{ height: 120, width: 100 }}
                       src={item.picture}
                       alt={item.title}
                     />
