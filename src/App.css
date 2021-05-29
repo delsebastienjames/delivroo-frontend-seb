@@ -32,7 +32,7 @@
 .background-grey {
   /* width: 100vw; */
   /* margin: 0 auto; */
-  background-color: rgb(238, 238, 238);
+  background-color: rgba(227, 227, 227, 0.2);
   border-radius: 15px;
 }
 .wrapper {
@@ -75,6 +75,7 @@
   font-weight: 700;
   font-size: 1.4rem;
   text-align: center;
+  padding-top: 10px;
 }
 .bgc {
   /* width: 100vw; */
@@ -101,13 +102,13 @@
   /* border: 1px solid rgb(68, 233, 134); */
   /* background-color: rgb(240, 204, 224); */
   font-weight: 600;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 .item-description {
   /* border: 1px solid rgb(233, 159, 68); */
   /* background-color: rgb(187, 214, 220); */
   font-size: 0.8rem;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 .item-price {
   /* border: 1px solid rgb(145, 233, 68); */
@@ -158,7 +159,7 @@ img {
   margin: 10px;
   padding: 10px;
   border-radius: 15px;
-  box-shadow: 1px 3px 15px lightgray;
+  box-shadow: 1px 1px 5px lightgray;
 }
 
 .cart {
@@ -166,12 +167,13 @@ img {
   top: 0;
   align-self: flex-start;
   margin: 5px;
-  background-color: #6a3b2821;
+  background-color: #a6bacb0f;
   padding: 10px;
   border-radius: 15px;
   height: 100%;
   width: 390px;
   border: 1px solid black;
+  margin-top: 42px;
 }
 
 .price {
@@ -183,10 +185,18 @@ img {
   /* border: 1px solid red;*/
   display: flex;
   justify-content: right;
-  color: #e22b2b;
+  color: rgb(203, 131, 41);
+}
+.price-menu {
+  /* background-color: rgba(61, 176, 238, 0.235); */
+  /* border: 1px solid red;*/
+  display: flex;
+  justify-content: left;
+  color: #75c7bc;
+  font-weight: 700;
 }
 .air {
-  padding: 8px;
+  padding: 10px;
   border-radius: 50%;
   font-size: 12px;
 }
@@ -200,23 +210,23 @@ img {
 @media (min-width: 741px) and (max-width: 1024px) {
   .item-description {
     border: 1px solid rgb(233, 159, 68);
-    background-color: rgb(187, 214, 220);
-    font-size: 14px;
+    /* background-color: rgb(187, 214, 220); */
+    font-size: 13px;
   }
   .item-title {
-    border: 1px solid rgb(68, 233, 134);
-    background-color: rgb(240, 204, 224);
+    /* border: 1px solid rgb(68, 233, 134); */
+    /* background-color: rgb(240, 204, 224); */
     font-size: 14px;
   }
   .item-price {
-    border: 1px solid rgb(145, 233, 68);
-    background-color: rgb(213, 220, 187);
+    /* border: 1px solid rgb(145, 233, 68); */
+    /* background-color: rgb(213, 220, 187); */
     font-size: 14px;
   }
   .data-description {
     font-size: 14px;
     color: #68696a;
-    border: 1px solid rgb(104, 59, 24);
+    /* border: 1px solid rgb(104, 59, 24); */
     /* background-color: rgb(79, 188, 255); */
     padding-right: 20%;
     text-align: justify;
@@ -225,7 +235,7 @@ img {
     width: 100%;
     font-weight: 50;
     font-size: 16px;
-    border: 1px solid rgb(82, 68, 233);
+    /* border: 1px solid rgb(82, 68, 233); */
     /* background-color: rgb(255, 249, 79); */
   }
   img {
@@ -246,22 +256,22 @@ img {
   .item-description {
     border: 1px solid rgb(233, 159, 68);
     background-color: rgb(187, 214, 220);
-    font-size: 12px;
+    font-size: 11px;
   }
   .item-title {
-    border: 1px solid rgb(68, 233, 134);
-    background-color: rgb(240, 204, 224);
+    /* border: 1px solid rgb(68, 233, 134); */
+    /* background-color: rgb(240, 204, 224); */
     font-size: 12px;
   }
   .item-price {
-    border: 1px solid rgb(145, 233, 68);
-    background-color: rgb(213, 220, 187);
+    /* border: 1px solid rgb(145, 233, 68); */
+    /* background-color: rgb(213, 220, 187); */
     font-size: 12px;
   }
   .data-description {
     font-size: 12px;
     color: #68696a;
-    border: 1px solid rgb(104, 59, 24);
+    /* border: 1px solid rgb(104, 59, 24); */
     /* background-color: rgb(79, 188, 255); */
     padding-right: 20%;
     text-align: justify;
@@ -270,7 +280,7 @@ img {
     width: 100%;
     font-weight: 50;
     font-size: 14px;
-    border: 1px solid rgb(82, 68, 233);
+    /* border: 1px solid rgb(82, 68, 233); */
     /* background-color: rgb(255, 249, 79); */
   }
 }
@@ -291,24 +301,24 @@ img {
     flex-direction: column;
   }
   .item-description {
-    border: 1px solid rgb(233, 159, 68);
-    background-color: rgb(187, 214, 220);
-    font-size: 10px;
+    /* border: 1px solid rgb(233, 159, 68); */
+    /* background-color: rgb(187, 214, 220); */
+    font-size: 9px;
   }
   .item-title {
-    border: 1px solid rgb(68, 233, 134);
-    background-color: rgb(240, 204, 224);
+    /* border: 1px solid rgb(68, 233, 134); */
+    /* background-color: rgb(240, 204, 224); */
     font-size: 10px;
   }
   .item-price {
-    border: 1px solid rgb(145, 233, 68);
-    background-color: rgb(213, 220, 187);
+    /* border: 1px solid rgb(145, 233, 68); */
+    /* background-color: rgb(213, 220, 187); */
     font-size: 10px;
   }
   .data-description {
     font-size: 10px;
     color: #68696a;
-    border: 1px solid rgb(104, 59, 24);
+    /* border: 1px solid rgb(104, 59, 24); */
     /* background-color: rgb(79, 188, 255); */
     padding-right: 20%;
     text-align: justify;
