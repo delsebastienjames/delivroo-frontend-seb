@@ -78,6 +78,7 @@ const App = () => {
   ) : (
     <div>
       <Header />
+
       <Hero data={data.restaurant} />
       <div style={{ display: "flex" }}>
         <Content data={data.categories} addToCart={addToCart} />
@@ -85,7 +86,9 @@ const App = () => {
           {cart.map((item, index) => {
             total += item.quantity * item.price;
             return (
-              <div className="menu-item">
+              <div>
+                <br></br>
+                {/* <div className="menu-item"> */}
                 <button onClick={() => substractFromCart(item)} className="air">
                   -
                 </button>
