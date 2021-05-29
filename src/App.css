@@ -51,6 +51,7 @@
 .montorgeuil {
   /* background-color: peru; */
   background-color: white;
+  border-bottom: 1px solid #eaebeb;
 }
 .logo img {
   height: 60px;
@@ -174,7 +175,7 @@ img {
   width: 390px;
   border: 1px solid black;
   margin-top: 42px;
-  text-align: center;
+  text-align: left;
 }
 
 .price {
@@ -245,7 +246,7 @@ img {
     object-fit: contain;
   }
 }
-@media (min-width: 340px) and (max-width: 740px) {
+@media (min-width: 349px) and (max-width: 740px) {
   .menus {
     display: flex;
     flex-direction: column;
@@ -271,7 +272,7 @@ img {
     font-size: 12px;
   }
   .data-description {
-    font-size: 12px;
+    font-size: 10px;
     color: #68696a;
     /* border: 1px solid rgb(104, 59, 24); */
     /* background-color: rgb(79, 188, 255); */
@@ -287,7 +288,7 @@ img {
   }
 }
 
-@media (max-width: 339px) {
+@media (max-width: 348px) {
   .menus {
     display: flex;
     flex-direction: column;
@@ -331,5 +332,13 @@ img {
     font-size: 12px;
     border: 1px solid rgb(82, 68, 233);
     /* background-color: rgb(255, 249, 79); */
+  }
+  .bred {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+  }
+  .montorgeuil img {
+    display: none;
   }
 }
