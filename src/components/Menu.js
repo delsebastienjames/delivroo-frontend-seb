@@ -17,25 +17,25 @@ const Menu = ({ data, addToCart }) => {
             }}
           >
             <div className="bgc">
-              <div className="wrapper">
-                <div className="menus">
-                  <div className="card">
-                    <h4 className="item-title">{item.title}</h4>
-                    <p className="item-description">{item.description}</p>
-                    <span className="item-price">{item.price}</span>
-                  </div>
-
-                  {item.picture && (
-                    <img
-                      style={{ height: 120, width: 100 }}
-                      src={item.picture}
-                      alt={item.title}
-                    />
-                  )}
+              {/* <div className="wrapper"> */}
+              <div className="menus">
+                <div className="card">
+                  <h4 className="item-title">{item.title}</h4>
+                  <p className="item-description">{item.description}</p>
+                  <span className="item-price">{item.price}</span>
                 </div>
+
+                {item.picture && (
+                  <img
+                    style={{ height: 120, width: 100 }}
+                    src={item.picture}
+                    alt={item.title}
+                  />
+                )}
               </div>
             </div>
           </div>
+          // </div>
         );
       })}
     </div>
