@@ -85,6 +85,7 @@ const App = () => {
         <div className="cart">
           {cart.map((item, index) => {
             total += item.quantity * item.price;
+
             return (
               <div>
                 <br></br>
