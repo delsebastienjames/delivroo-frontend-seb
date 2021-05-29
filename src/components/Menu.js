@@ -22,7 +22,7 @@ const Menu = ({ data, addToCart }) => {
                 <div className="card">
                   <h4 className="item-title">{item.title}</h4>
                   <p className="item-description">{item.description}</p>
-                  <span className="item-price">{item.price}</span>
+                  <span className="item-price price-menu">{item.price}€</span>
                 </div>
 
                 {item.picture && (
